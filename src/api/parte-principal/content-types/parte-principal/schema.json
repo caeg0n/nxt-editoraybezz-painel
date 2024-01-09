@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parte_principals",
+  "info": {
+    "singularName": "parte-principal",
+    "pluralName": "parte-principals",
+    "displayName": "parte_principal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    }
+  }
+}
