@@ -1,8 +1,8 @@
 {
   "name": "nxt-editoraybezz-painel",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "1.0.0",
+  "description": "Editora Ybezz painel",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -21,10 +21,7 @@
     "styled-components": "5.3.3"
   },
   "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "307991b4-0079-40e3-9380-a405ed280ad9"
+    "name": "Carlos Eduardo"
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
