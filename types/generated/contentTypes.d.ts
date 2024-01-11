@@ -829,6 +829,37 @@ export interface ApiDecimaPrimeiraParteDecimaPrimeiraParte
   };
 }
 
+export interface ApiDecimaSegundaParteDecimaSegundaParte
+  extends Schema.CollectionType {
+  collectionName: 'decima_segunda_partes';
+  info: {
+    singularName: 'decima-segunda-parte';
+    pluralName: 'decima-segunda-partes';
+    displayName: 'Decima Segunda Parte';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    teste: Attribute.RichText;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::decima-segunda-parte.decima-segunda-parte',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::decima-segunda-parte.decima-segunda-parte',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiEstudanteCriativoEstudanteCriativo
   extends Schema.CollectionType {
   collectionName: 'estudante_criativos';
@@ -1123,6 +1154,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::decima-parte.decima-parte': ApiDecimaParteDecimaParte;
       'api::decima-primeira-parte.decima-primeira-parte': ApiDecimaPrimeiraParteDecimaPrimeiraParte;
+      'api::decima-segunda-parte.decima-segunda-parte': ApiDecimaSegundaParteDecimaSegundaParte;
       'api::estudante-criativo.estudante-criativo': ApiEstudanteCriativoEstudanteCriativo;
       'api::nona-parte.nona-parte': ApiNonaParteNonaParte;
       'api::oitava-parte.oitava-parte': ApiOitavaParteOitavaParte;
