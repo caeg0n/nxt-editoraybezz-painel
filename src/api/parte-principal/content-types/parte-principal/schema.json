@@ -4,7 +4,8 @@
   "info": {
     "singularName": "parte-principal",
     "pluralName": "parte-principals",
-    "displayName": "parte_principal"
+    "displayName": "Primeira Parte",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
