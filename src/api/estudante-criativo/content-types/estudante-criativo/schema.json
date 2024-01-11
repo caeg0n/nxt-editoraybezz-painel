@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estudante_criativos",
+  "info": {
+    "singularName": "estudante-criativo",
+    "pluralName": "estudante-criativos",
+    "displayName": "Segunda Parte",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo_principal": {
+      "type": "string"
+    }
+  }
+}
