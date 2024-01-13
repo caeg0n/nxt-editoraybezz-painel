@@ -12,7 +12,46 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "titulo_principal": {
+    "Titulo": {
+      "type": "string"
+    },
+    "Cabecalho_em_Azul": {
+      "type": "string"
+    },
+    "Titulo_Da_Secao_1": {
+      "type": "string"
+    },
+    "Descricao_Da_Secao_1": {
+      "type": "string"
+    },
+    "Titulo_Da_Secao_2": {
+      "type": "string"
+    },
+    "Descricao_Da_Secao_2": {
+      "type": "string"
+    },
+    "Titulo_Da_Secao_3": {
+      "type": "string"
+    },
+    "Descricao_Da_Secao_3": {
+      "type": "string"
+    },
+    "Titulo_Da_Secao_4": {
+      "type": "string"
+    },
+    "Descricao_Da_Secao_4": {
+      "type": "string"
+    },
+    "Titulo_Da_Secao_5": {
+      "type": "string"
+    },
+    "Descricao_Da_Secao_5": {
+      "type": "string"
+    },
+    "Titulo_Da_Secao_6": {
+      "type": "string"
+    },
+    "Descricao_Da_Secao_6": {
       "type": "string"
     }
   }

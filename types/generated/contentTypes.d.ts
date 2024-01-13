@@ -768,98 +768,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
-export interface ApiDecimaParteDecimaParte extends Schema.CollectionType {
-  collectionName: 'decima_partes';
-  info: {
-    singularName: 'decima-parte';
-    pluralName: 'decima-partes';
-    displayName: 'Decima Parte';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    titulo: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::decima-parte.decima-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::decima-parte.decima-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiDecimaPrimeiraParteDecimaPrimeiraParte
-  extends Schema.CollectionType {
-  collectionName: 'decima_primeira_partes';
-  info: {
-    singularName: 'decima-primeira-parte';
-    pluralName: 'decima-primeira-partes';
-    displayName: 'Decima Primeira Parte';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    titulo: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::decima-primeira-parte.decima-primeira-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::decima-primeira-parte.decima-primeira-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiDecimaSegundaParteDecimaSegundaParte
-  extends Schema.CollectionType {
-  collectionName: 'decima_segunda_partes';
-  info: {
-    singularName: 'decima-segunda-parte';
-    pluralName: 'decima-segunda-partes';
-    displayName: 'Decima Segunda Parte';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    teste: Attribute.RichText;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::decima-segunda-parte.decima-segunda-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::decima-segunda-parte.decima-segunda-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiEstudanteCriativoEstudanteCriativo
   extends Schema.CollectionType {
   collectionName: 'estudante_criativos';
@@ -873,7 +781,20 @@ export interface ApiEstudanteCriativoEstudanteCriativo
     draftAndPublish: true;
   };
   attributes: {
-    titulo_principal: Attribute.String;
+    Titulo: Attribute.String;
+    Cabecalho_em_Azul: Attribute.String;
+    Titulo_Da_Secao_1: Attribute.String;
+    Descricao_Da_Secao_1: Attribute.String;
+    Titulo_Da_Secao_2: Attribute.String;
+    Descricao_Da_Secao_2: Attribute.String;
+    Titulo_Da_Secao_3: Attribute.String;
+    Descricao_Da_Secao_3: Attribute.String;
+    Titulo_Da_Secao_4: Attribute.String;
+    Descricao_Da_Secao_4: Attribute.String;
+    Titulo_Da_Secao_5: Attribute.String;
+    Descricao_Da_Secao_5: Attribute.String;
+    Titulo_Da_Secao_6: Attribute.String;
+    Descricao_Da_Secao_6: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -885,66 +806,6 @@ export interface ApiEstudanteCriativoEstudanteCriativo
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::estudante-criativo.estudante-criativo',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiNonaParteNonaParte extends Schema.CollectionType {
-  collectionName: 'nona_partes';
-  info: {
-    singularName: 'nona-parte';
-    pluralName: 'nona-partes';
-    displayName: 'Nona Parte';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    titulo: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::nona-parte.nona-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::nona-parte.nona-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiOitavaParteOitavaParte extends Schema.CollectionType {
-  collectionName: 'oitava_partes';
-  info: {
-    singularName: 'oitava-parte';
-    pluralName: 'oitava-partes';
-    displayName: 'Oitava Parte';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    titulo: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::oitava-parte.oitava-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::oitava-parte.oitava-parte',
       'oneToOne',
       'admin::user'
     > &
@@ -984,156 +845,6 @@ export interface ApiPartePrincipalPartePrincipal extends Schema.CollectionType {
   };
 }
 
-export interface ApiQuartaParteQuartaParte extends Schema.CollectionType {
-  collectionName: 'quarta_partes';
-  info: {
-    singularName: 'quarta-parte';
-    pluralName: 'quarta-partes';
-    displayName: 'Quarta Parte';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    titulo: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::quarta-parte.quarta-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::quarta-parte.quarta-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiQuintaParteQuintaParte extends Schema.CollectionType {
-  collectionName: 'quinta_partes';
-  info: {
-    singularName: 'quinta-parte';
-    pluralName: 'quinta-partes';
-    displayName: 'Quinta Parte';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    titulo: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::quinta-parte.quinta-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::quinta-parte.quinta-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiSetimaParteSetimaParte extends Schema.CollectionType {
-  collectionName: 'setima_partes';
-  info: {
-    singularName: 'setima-parte';
-    pluralName: 'setima-partes';
-    displayName: 'S\u00E9tima Parte';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    titulo: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::setima-parte.setima-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::setima-parte.setima-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiSextaParteSextaParte extends Schema.CollectionType {
-  collectionName: 'sexta_partes';
-  info: {
-    singularName: 'sexta-parte';
-    pluralName: 'sexta-partes';
-    displayName: 'Sexta Parte';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    titulo: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::sexta-parte.sexta-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::sexta-parte.sexta-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiTerceiraParteTerceiraParte extends Schema.CollectionType {
-  collectionName: 'terceira_partes';
-  info: {
-    singularName: 'terceira-parte';
-    pluralName: 'terceira-partes';
-    displayName: 'Terceira Parte';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    titulo: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::terceira-parte.terceira-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::terceira-parte.terceira-parte',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1152,18 +863,8 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
-      'api::decima-parte.decima-parte': ApiDecimaParteDecimaParte;
-      'api::decima-primeira-parte.decima-primeira-parte': ApiDecimaPrimeiraParteDecimaPrimeiraParte;
-      'api::decima-segunda-parte.decima-segunda-parte': ApiDecimaSegundaParteDecimaSegundaParte;
       'api::estudante-criativo.estudante-criativo': ApiEstudanteCriativoEstudanteCriativo;
-      'api::nona-parte.nona-parte': ApiNonaParteNonaParte;
-      'api::oitava-parte.oitava-parte': ApiOitavaParteOitavaParte;
       'api::parte-principal.parte-principal': ApiPartePrincipalPartePrincipal;
-      'api::quarta-parte.quarta-parte': ApiQuartaParteQuartaParte;
-      'api::quinta-parte.quinta-parte': ApiQuintaParteQuintaParte;
-      'api::setima-parte.setima-parte': ApiSetimaParteSetimaParte;
-      'api::sexta-parte.sexta-parte': ApiSextaParteSextaParte;
-      'api::terceira-parte.terceira-parte': ApiTerceiraParteTerceiraParte;
     }
   }
 }

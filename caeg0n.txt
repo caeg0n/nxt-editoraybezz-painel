@@ -1,2 +1,2 @@
-init in develop: yarn develop
+init in develop: npm run dev
 init in prod: npm start

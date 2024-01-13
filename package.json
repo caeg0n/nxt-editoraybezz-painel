@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Editora Ybezz painel",
   "scripts": {
-    "develop": "strapi develop",
+    "dev": "[ \"$NODE_ENV\" = \"development\" ] && . ~/.nvm/nvm.sh && nvm use 18 && strapi develop || [ \"$NODE_ENV\" = \"production\" ] && strapi start",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
