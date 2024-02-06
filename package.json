@@ -2,9 +2,9 @@
   "name": "nxt-editoraybezz-painel",
   "private": true,
   "version": "1.0.0",
-  "description": "Editora Ybezz painel",
+  "description": "Editora Ybezz Painel",
   "scripts": {
-    "dev": "[ \"$NODE_ENV\" = \"development\" ] && . ~/.nvm/nvm.sh && nvm use 18 && strapi develop || [ \"$NODE_ENV\" = \"production\" ] && strapi start",
+    "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"

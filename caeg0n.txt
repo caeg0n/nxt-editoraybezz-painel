@@ -1,2 +1,3 @@
+nvm use 18
 init in develop: npm run dev
 init in prod: npm start
