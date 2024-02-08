@@ -813,6 +813,36 @@ export interface ApiEstudanteCriativoEstudanteCriativo
   };
 }
 
+export interface ApiImagemImagem extends Schema.CollectionType {
+  collectionName: 'imagems';
+  info: {
+    singularName: 'imagem';
+    pluralName: 'imagems';
+    displayName: 'Imagem';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    img: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::imagem.imagem',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::imagem.imagem',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPartePrincipalPartePrincipal extends Schema.CollectionType {
   collectionName: 'parte_principals';
   info: {
@@ -864,6 +894,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::estudante-criativo.estudante-criativo': ApiEstudanteCriativoEstudanteCriativo;
+      'api::imagem.imagem': ApiImagemImagem;
       'api::parte-principal.parte-principal': ApiPartePrincipalPartePrincipal;
     }
   }
